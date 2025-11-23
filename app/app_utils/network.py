@@ -1,8 +1,9 @@
-from aiohttp import ClientSession
 from typing import Optional
 import base64
-from core.response import LoggingData, ResponseData
 
+from aiohttp import ClientSession
+
+from core.response import LoggingData, ResponseData
 from error_handlers.network import error_handler_for_the_website
 
 

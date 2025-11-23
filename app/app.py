@@ -3,8 +3,8 @@ import signal
 import sys
 
 
-from rec_content_bot.main import run_rec_content_bot
-from rec_content_bot.extension import bot
+from bot.main import run_rec_content_bot
+from bot.extension import bot
 from settings.response import root_warning_logger, root_info_logger
 
 # Меняет тип event_loop для виндоус чтобы при нажатии ctl+c не было ошибки KeyboardInterrupt

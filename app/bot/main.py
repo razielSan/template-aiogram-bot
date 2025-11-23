@@ -2,7 +2,6 @@ import aiohttp
 
 from bot.extension import bot, dp, bot_settings, main_logger
 from bot.views import main_router
-
 from app_utils.filesistem import ensure_derictories
 
 # создаем общие пути

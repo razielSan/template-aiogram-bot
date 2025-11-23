@@ -11,6 +11,7 @@ from logging import (
     WARNING,
 )
 from sys import stdout
+
 from core.response import LoggingData
 from core.logging import LoggerStorage
 

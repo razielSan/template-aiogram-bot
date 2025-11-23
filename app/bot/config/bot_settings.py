@@ -2,7 +2,6 @@ from typing import List
 from pathlib import Path
 
 from aiogram.types import BotCommand
-
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
