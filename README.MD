@@ -55,6 +55,8 @@ example_models__example__API_KEY=123
 
 ## 6. Запуска бота
 
+Из директории app/
+
 python app.py
 
 
