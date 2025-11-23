@@ -1,0 +1,14 @@
+venv
+requirements.in
+app/app_utils/__pycache__
+app/bot/__pycache__
+app/bot/config/__pycache__
+app/bot/config/models/__pycache__
+app/bot/middleware/__pycache__
+app/bot/views/__pycache__
+app/core/__pycache__
+app/settings/__pycache__
+app/bot/.env
+
+
+
