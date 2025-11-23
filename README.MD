@@ -25,7 +25,7 @@ python --version
 ##  2. Клонирование репозитория
 
 git clone https://github.com/razielSan/template-aiogram-bot.git<br>
-cd app
+cd template-aiogram-bot/app
 
 
 ## 3. Создание виртуального окружения
