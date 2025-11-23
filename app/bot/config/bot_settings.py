@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 from pathlib import Path
 
 from aiogram.types import BotCommand
@@ -19,7 +19,7 @@ class BotSettings(BaseSettings):
     PATH_BOT_TEMP_FOLDER: Path = BOT_DIR / "temp"
     PATH_BOT_LOG_FOLDER: Path = ROOT_DIR / "logs" / BOT_NAME
 
-    TOKEN: str
+    TOKEN: Optional[str] = None
     BOT_DIR: Path = Path(__file__).resolve().parent.parent
     LIST_BOT_COMMANDS: List[BotCommand] = [
         BotCommand(command="start", description="Меню бота")

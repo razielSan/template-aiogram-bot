@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 Создайте файл .env в папке app/neuroBot/
 
-BOT_TOKEN=ВАШ_ТОКЕН_TELEGRAM<br>
+TOKEN=ВАШ_ТОКЕН_TELEGRAM<br>
 
 Пример .env для модели example
 
