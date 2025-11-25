@@ -1,16 +1,21 @@
 from aiogram import Bot, Dispatcher
 
 from bot.config.bot_settings import BotSettings
+from bot.config.models.main import BaseGeneration
 from app_utils.logging import init_loggers, setup_bot_logging, get_loggers
 from settings.response import app_settings
 from core.logging import LoggerStorage
+from core.response import LoggingData
 
+
+# получаем доступ ко всем моделям
+models_settings: BaseGeneration = BaseGeneration()
 
 # Создаем хранилище логгеров
-logging_data = LoggerStorage()
+logging_data: LoggerStorage = LoggerStorage()
 
 # Получаем настройки бота
-bot_settings = BotSettings()
+bot_settings: BotSettings = BotSettings()
 
 # Создаем бота и диспетчер
 bot: Bot = Bot(token=bot_settings.TOKEN)
@@ -27,7 +32,8 @@ init_loggers(
     log_data=logging_data,
 )
 
-main_logger = get_loggers(
+# Создаем логгеры
+main_logger: LoggingData = get_loggers(
     router_name=bot_settings.BOT_NAME,
     logging_data=logging_data,
 )
